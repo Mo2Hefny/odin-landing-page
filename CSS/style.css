@@ -1,0 +1,143 @@
+:root {
+  --dark-background: #1F2937;
+  --hero-primary: #F9FaF8;
+  /* Header and logo */
+  --hero-secondary: #E5E7EB;
+  /* quote section and  links text */
+  --CTA-background: #3882F6;
+  --text-primary: #1F2937;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--dark-background);
+  display: flex;
+  justify-content: space-around;
+  padding: 0 32px;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 48px;
+  color: var(--hero-primary);
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  color: var(--hero-primary);
+}
+
+p {
+  font-size: 18px;
+}
+
+.header-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-links li a {
+  text-decoration: none;
+  color: var(--hero-secondary);
+  font-size: 18px;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-background);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-left: 32px;
+  gap: 48px;
+}
+
+.hero-img {
+  overflow: hidden;
+  width: 550px;
+  min-height: 100%;
+  flex: 0 1 auto;
+  background-image: 
+  linear-gradient(to right,#1f2937 10%, #3a414e00),
+  linear-gradient(to bottom,#1f2937 5%, #3a414e00),
+  url("../images/hero-dark.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  flex: 1;
+  min-width: 400px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .section {
+  max-width: 600px;
+}
+
+.hero p {
+  color: var(--hero-secondary);
+  margin-bottom: 24px;
+}
+
+.hero button {
+  padding: 8px 16px;
+  color: var(--hero-primary);
+  background-color: var(--CTA-background);
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.content h2 {
+  color: var(--dark-background);
+  text-align: center;
+}
+
+.content .information {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 32px;
+}
+.content .information .section {
+  width: 200px;
+  text-align: center;
+}
+.content .information .content-img {
+  background: linear-gradient(to left, #e5e7eb63, #e5e7eb63);
+  display: block;
+  box-sizing: border-box;
+  max-width: 200px;
+  min-height: 200px;
+  border: 5px solid var(--CTA-background);
+  border-radius: 8px;
+}
