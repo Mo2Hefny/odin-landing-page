@@ -176,16 +176,18 @@ button {
 }
 
 #quote .container .author {
+  margin: 6px 0 0 0;
   align-self: flex-end;
   color: var(--dark-background);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #quote .container .quote {
+  margin: 0;
   color: var(--text-primary);
   font-style: italic;
   font-size: 36px;
-  font-weight: 100px;
+  font-weight: 100;
 }
 
 #sign-up {
@@ -195,7 +197,7 @@ button {
   margin: 100px 0;
 }
 
-#sign-up > .container {
+#sign-up>.container {
   max-width: 1000px;
   margin: 0 42px;
   flex-direction: row;
@@ -205,13 +207,14 @@ button {
   border-radius: 10px;
   padding: 16px;
 }
-#sign-up > .container > .container{
+
+#sign-up>.container>.container {
   max-width: fit-content;
   padding: 8px;
   flex: 1;
 }
 
-#sign-up > .container > button {
+#sign-up>.container>button {
   flex-basis: auto;
   border: 2px solid var(--hero-primary);
   color: var(--hero-primary);
