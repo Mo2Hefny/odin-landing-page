@@ -16,11 +16,16 @@ body {
   flex-direction: column;
 }
 
-.header {
+#nav {
   background-color: var(--dark-background);
   display: flex;
-  justify-content: space-around;
-  padding: 0 32px;
+  justify-content: space-between;
+  padding: 0 42px;
+  margin: 0 48px;
+}
+
+#nav h3 {
+  flex: 1;
 }
 
 h1 {
@@ -42,7 +47,15 @@ p {
   font-size: 18px;
 }
 
+button {
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .header-links {
+  flex: 0 0 auto;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -65,7 +78,7 @@ p {
   flex-direction: column;
 }
 
-.hero-container {
+#main {
   flex: 1;
   display: flex;
   justify-content: right;
@@ -79,18 +92,19 @@ p {
   width: 550px;
   min-height: 100%;
   flex: 0 1 auto;
-  background-image: 
-  linear-gradient(to right,#1f2937 10%, #3a414e00),
-  linear-gradient(to bottom,#1f2937 5%, #3a414e00),
-  url("../images/hero-dark.jpg");
+  background-image:
+    linear-gradient(to right, #1f2937 10%, #3a414e00),
+    linear-gradient(to bottom, #1f2937 5%, #3a414e00),
+    url("../images/hero-dark.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .container {
-  flex: 1;
   min-width: 400px;
+  max-width: 50%;
+  flex: 1 1 auto;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -107,31 +121,36 @@ p {
 }
 
 .hero button {
-  padding: 8px 16px;
   color: var(--hero-primary);
   background-color: var(--CTA-background);
-  border-radius: 6px;
   border: none;
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .content h2 {
+  margin: 32px;
   color: var(--dark-background);
   text-align: center;
 }
 
-.content .information {
+#selection {
   display: flex;
+  justify-content: center;
+}
+
+#selection .container {
+  flex-direction: row;
+  padding: 36px;
+  gap: 36px;
+  max-width: 1000px;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 32px;
-  gap: 32px;
 }
+
 .content .information .section {
   width: 200px;
   text-align: center;
 }
+
 .content .information .content-img {
   background: linear-gradient(to left, #e5e7eb63, #e5e7eb63);
   display: block;
@@ -140,4 +159,86 @@ p {
   min-height: 200px;
   border: 5px solid var(--CTA-background);
   border-radius: 8px;
+}
+
+.testimonial {
+  background-color: var(--hero-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote .container {
+  margin: 42px 0;
+  max-width: 800px;
+  flex: 1 1 auto;
+}
+
+#quote .container .author {
+  align-self: flex-end;
+  color: var(--dark-background);
+  font-weight: bold;
+}
+
+#quote .container .quote {
+  color: var(--text-primary);
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 100px;
+}
+
+#sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+#sign-up > .container {
+  max-width: 1000px;
+  margin: 0 42px;
+  flex-direction: row;
+  background-color: var(--CTA-background);
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 16px;
+}
+#sign-up > .container > .container{
+  max-width: fit-content;
+  padding: 8px;
+  flex: 1;
+}
+
+#sign-up > .container > button {
+  flex-basis: auto;
+  border: 2px solid var(--hero-primary);
+  color: var(--hero-primary);
+  background-color: var(--CTA-background);
+}
+
+#sign-up h3 {
+  text-align: left;
+  color: var(--hero-primary);
+  margin: 0;
+}
+
+#sign-up p {
+  text-align: left;
+  color: var(--hero-secondary);
+  margin: 8px 0;
+}
+
+.footer {
+  background-color: var(--dark-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: var(--hero-secondary);
 }
